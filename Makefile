@@ -6,14 +6,17 @@
 #    By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/04 18:09:18 by houmanso          #+#    #+#              #
-#    Updated: 2022/11/07 03:46:47 by houmanso         ###   ########.fr        #
+#    Updated: 2022/11/07 22:16:12 by houmanso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME   = libftprintf.a
 FTOBJ  = ./libft/*.o
 CFLAGS = -Wall -Wextra -Werror
-SRC    = ft_printf.c
+SRC    = ft_printf.c \
+		 ft_print_char.c \
+		 ft_print_nbr.c \
+		 ft_print_str.c
 OBJ    = $(SRC:.c=.o)
 
 all : $(NAME)
