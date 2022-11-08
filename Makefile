@@ -6,7 +6,7 @@
 #    By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/04 18:09:18 by houmanso          #+#    #+#              #
-#    Updated: 2022/11/08 18:38:28 by houmanso         ###   ########.fr        #
+#    Updated: 2022/11/08 19:01:30 by houmanso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ SRC    = ft_printf.c \
 		 ft_print_nbr.c \
 		 ft_print_str.c \
 		 ft_print_hex.c \
-		 ft_print_p.c
+		 ft_print_p.c \
+		 ft_print_u.c
 OBJ    = $(SRC:.c=.o)
 
 all : $(NAME)

@@ -1,28 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_nbr.c                                     :+:      :+:    :+:   */
+/*   ft_print_u.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 21:27:12 by houmanso          #+#    #+#             */
-/*   Updated: 2022/11/08 19:03:42 by houmanso         ###   ########.fr       */
+/*   Created: 2022/11/08 18:58:02 by houmanso          #+#    #+#             */
+/*   Updated: 2022/11/08 19:02:27 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_print_nbr(long n, size_t *len)
+void	ft_print_u(unsigned int u, size_t *len)
 {
-	long	nbr;
-
-	nbr = n;
-	if (nbr < 0)
-	{
-		ft_print_char('-', len);
-		nbr *= -1;
-	}
-	if (nbr >= 10)
-		ft_print_nbr(nbr / 10, len);
-	ft_print_char(nbr % 10 + '0', len);
+	ft_print_nbr((unsigned int)u, len);
 }
