@@ -6,15 +6,15 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 21:30:02 by houmanso          #+#    #+#             */
-/*   Updated: 2022/11/07 21:30:03 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/11/08 18:17:20 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "ft_printf.h"
 
-int	ft_print_char(char c)
+void	ft_print_char(char c, size_t *len)
 {
 	write(1, &c, 1);
-	return (1);
+	(*len)++;
 }
