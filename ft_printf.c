@@ -6,7 +6,7 @@
 /*   By: houmanso <houmanso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 03:31:31 by houmanso          #+#    #+#             */
-/*   Updated: 2022/11/08 18:12:09 by houmanso         ###   ########.fr       */
+/*   Updated: 2022/11/08 18:41:30 by houmanso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ static void	ft_check(const char *s, int *i, size_t *len, va_list *va)
 		ft_print_hex(va_arg(*va, unsigned int), "0123456789abcdef", len);
 	else if (s[*i] == 'X')
 		ft_print_hex(va_arg(*va, unsigned int), "0123456789ABCDEF", len);
+	else if (s[*i] == 'p')
+		ft_print_p(va_arg(*va, size_t), len);
 	else if (s[*i] == '%')
 		ft_print_char('%', len);
 	else
